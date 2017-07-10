@@ -5,14 +5,14 @@ namespace MVCMusicStore.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<MVCMusicStore.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<MVCMusicStore.Models.MVCMusicStoreContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(MVCMusicStore.Models.ApplicationDbContext context)
+        protected override void Seed(MVCMusicStore.Models.MVCMusicStoreContext context)
         {
             //  This method will be called after migrating to the latest version.
 

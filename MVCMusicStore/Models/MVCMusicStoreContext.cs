@@ -19,10 +19,10 @@ namespace MVCMusicStore.Models
         {
         }
 
-        public System.Data.Entity.DbSet<MVCMusicStore.Models.Album> Albums { get; set; }
+        public DbSet<Album> Albums { get; set; }
 
-        public System.Data.Entity.DbSet<MVCMusicStore.Models.Artist> Artists { get; set; }
+        public DbSet<Artist> Artists { get; set; }
 
-        public System.Data.Entity.DbSet<MVCMusicStore.Models.Review> Reviews { get; set; }
+        public DbSet<Review> Reviews { get; set; }
     }
 }

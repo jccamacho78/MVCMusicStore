@@ -11,6 +11,7 @@ namespace MVCMusicStore.Models
 
         public string Contents { get; set; }
 
+        [Required()]
         [DataType(DataType.EmailAddress)]
         [Display(Name = "Email")]
         public string ReviewerEmail { get; set; }
