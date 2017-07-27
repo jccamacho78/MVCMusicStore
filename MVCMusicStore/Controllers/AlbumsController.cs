@@ -14,8 +14,15 @@ namespace MVCMusicStore.Controllers
     {
         private MVCMusicStoreContext db = new MVCMusicStoreContext();
 
+        // This action hasn't a view, so it will fail
+        public ActionResult DisplayByArtist()
+        {
+            // Code
+            return View();
+        }
+
         // GET: Albums
-        [Route("Albums/All")]
+        //[Route("Albums/All")]
         public ActionResult Index()
         {
             return View(db.Albums.ToList());
